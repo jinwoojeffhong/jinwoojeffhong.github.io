@@ -1,8 +1,8 @@
 ---
 layout: post
-title:
-categories:
-date:
+title: Dependency Parsing
+date: 2019-04-07T00:00:00.001Z
+categories: update
 ---
 ## 1. **일반적 문장분석방법론**
 
