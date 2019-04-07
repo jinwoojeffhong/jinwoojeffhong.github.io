@@ -1,0 +1,8 @@
+---
+layout: post
+title: test
+date: 2019-04-07T14:37:44.000Z
+categories: update
+---
+<img src="/images/fulls/03.jpg" class="fit image">
+연습용입니다.
