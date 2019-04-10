@@ -4,7 +4,10 @@ title: Dependency Parsing
 date: 2019-04-07T00:00:00.001Z
 categories: update
 ---
-<img src="/images/dependency_parsing/coffee.jpg" class="fit image">## 1. **일반적 문장분석방법론**
+<img src="/images/dependency_parsing/coffee.jpg" class="fit image">
+
+
+# 1. 일반적 문장분석방법론
 
 - 언어학에서 문장을 분석하는 방법으로 크게 (1)Constituency Parsing과 (2)Dependecy Parsing 두가지 방식이 존재한다. 두 방법들 모두 분석하고자 하는 문장을 문장을 구성하는 하위 부분(Part)들로 구분한다는 점에서는 동일하나 분할규칙**(Division Method)** 에서 차이를 보인다.
 
@@ -28,7 +31,7 @@ categories: update
                               |                |
                             sees              Bill
 
-    2. Dependency Tree
+2. Dependency Tree
     							sees
                     |
             +--------------+
@@ -54,13 +57,17 @@ categories: update
 
 - State는 Stack, Buffer, Arc Set 3가지로 구성되어 있으며, 각각 다음과 같이 표시한다.
 
-$$c=(\sigma, \beta, A)$$
+$$
+c=(\sigma, \beta, A)
+$$
 
 - **1)Stack**: 단어를 쌓아놓는 함이며, Initial State에서는 Root만 존재하나 Terminal State에서는 모든 단어를 다 담고 있다.
 - **2)Buffer**: 역시 단어를 쌓아놓는 함이며, Buffer에서 단어를 꺼내 Stack에 쌓는다. Initial State에서는 Root를 제외한 모든 단어를 담고 있으며, Terminal State에서는 빈 함이 된다.(Empty)
 - **3)Arc Set:** 두 단어간 관계정보를 담은 Arc들의 집함이며, Arc는 단어 두개와 두 단어 간 관계정보를 표시하는 r로 구성되어있다. Arc의 노테이션은 A이다.
 
-$$A= (w_i, r, w_j)'s$$
+$$
+A= (w_i, r, w_j)'s
+$$
 
 ## Terminal
 
