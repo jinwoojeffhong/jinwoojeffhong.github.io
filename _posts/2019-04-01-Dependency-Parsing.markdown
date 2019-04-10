@@ -48,7 +48,7 @@ Constituency Parsing은 문장의 문법구조에 기반한 분석방식이다. 
 
 # 2. Dependency Parsing
 
-문장(Sentence)를 입력받아 Dependency Tree를 출력한다. 즉 문장을 Tree로 매핑(Mapping)해주는 <font color='red'> Parsing Model </font>를 만드는 게 목적이다.
+문장(Sentence)를 입력받아 Dependency Tree를 출력한다. 즉 문장을 Tree로 매핑(Mapping)해주는 <span style="color:red"> Parsing Model </span>를 만드는 게 목적이다.
 
 Parsing 모델을 만들기 위해서는 다음의 두 가지 문제를 해결해야 한다. 첫번째 문제는 Learning인데, Dependency Graph 처리된 문장 데이터셋으로 모델을 학습시켜, 새로운 문장이 들어왔을 때 올바른 Parsing을 하는 모델은 만들어야 한다. 두번째 문제는 Parsing이며 모델과 문장이 주어졌을 때 문장을 처리하는 최적 Dependency Graph를 도출해야 한다. 즉 Dependency Parsing을 잘하기 위해서는 모델(M)과 Dependency Graph(D)를 잘 만들어야 한다.
 
