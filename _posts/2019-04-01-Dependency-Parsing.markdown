@@ -4,7 +4,7 @@ title: Dependency Parsing
 date: 2019-04-07T00:00:00.001Z
 categories: update
 ---
-## 1. **일반적 문장분석방법론**
+<img src="/images/dependency_parsing/coffee.jpg" class="fit image">## 1. **일반적 문장분석방법론**
 
 - 언어학에서 문장을 분석하는 방법으로 크게 (1)Constituency Parsing과 (2)Dependecy Parsing 두가지 방식이 존재한다. 두 방법들 모두 분석하고자 하는 문장을 문장을 구성하는 하위 부분(Part)들로 구분한다는 점에서는 동일하나 분할규칙**(Division Method)** 에서 차이를 보인다.
 
