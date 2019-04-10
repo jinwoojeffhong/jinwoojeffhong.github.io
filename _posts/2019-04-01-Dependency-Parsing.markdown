@@ -35,6 +35,7 @@ Constituency Parsing은 문장의 문법구조에 기반한 분석방식이다. 
 
 
 ### 1-2. Dependency Tree
+
     							sees
                     |
             +--------------+
@@ -68,9 +69,9 @@ Dependency Parsing(의존성 문장분석)에서도 여러 갈래가 존재하�
 
 State는 Stack, Buffer, Arc Set 3가지로 구성되어 있으며, 각각 다음과 같이 표시한다.
 
-$$
+$$$
 c=(\sigma, \beta, A)
-$$
+$$$
 
 **1)Stack**: 단어를 쌓아놓는 함이며, Initial State에서는 Root만 존재하나 Terminal State에서는 모든 단어를 다 담고 있다.
 **2)Buffer**: 역시 단어를 쌓아놓는 함이며, Buffer에서 단어를 꺼내 Stack에 쌓는다. Initial State에서는 Root를 제외한 모든 단어를 담고 있으며, Terminal State에서는 빈 함이 된다.(Empty)
