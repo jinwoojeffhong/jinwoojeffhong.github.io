@@ -8,8 +8,9 @@ categories: update
 
 
 # 1. 일반적 문장분석방법론
-
+<p>
  언어학에서 문장을 분석하는 방법으로 크게 <U>(1)Constituency Parsing</U>과 <U>(2)Dependecy Parsing</U> 두가지 방식이 존재한다. 두 방법은 문장을 하위 부분(Part)들로 나눈다는 점에서는 동일하나 분할규칙**(Division Method)** 에서 차이를 보인다.
+</p>
 
 Constituency Parsing은 문장의 문법구조에 기반한 분석방식이다. Constituency Parser는 문장을 하위-구(Sub-Phrase)로 쪼개며, 구체적으로 명사구(Subject Noun Phrase)와 동사구(Predicate Verb Phrase)로 분리한다. 반면 Dependency Parser는 문장 내 두 단어의 의존관계에 집중한다. 두 방식모두 이러한 분할규칙에 따라 Parse Tree를 생성하는데 일단 Dependency Parser에 집중해보겠다. 두 단어 사이의 수식관계에 따라 수식단어를 Parent 노드로, 피수식단어를 Child 노드로 분리하고, 문장 내 동사(Verb)를  Tree의 제일 상단, 즉 Root로 설정한다.
 
@@ -47,7 +48,7 @@ Constituency Parsing은 문장의 문법구조에 기반한 분석방식이다. 
 
 # 2. Dependency Parsing
 
-문장(Sentence)를 입력받아 Dependency Tree를 출력한다. 즉 문장을 Tree로 매핑(Mapping)해주는 Parsing Model를 만드는 게 목적이다.
+문장(Sentence)를 입력받아 Dependency Tree를 출력한다. 즉 문장을 Tree로 매핑(Mapping)해주는 <font color='red'> Parsing Model </font>를 만드는 게 목적이다.
 
 Parsing 모델을 만들기 위해서는 다음의 두 가지 문제를 해결해야 한다. 첫번째 문제는 Learning인데, Dependency Graph 처리된 문장 데이터셋으로 모델을 학습시켜, 새로운 문장이 들어왔을 때 올바른 Parsing을 하는 모델은 만들어야 한다. 두번째 문제는 Parsing이며 모델과 문장이 주어졌을 때 문장을 처리하는 최적 Dependency Graph를 도출해야 한다. 즉 Dependency Parsing을 잘하기 위해서는 모델(M)과 Dependency Graph(D)를 잘 만들어야 한다.
 
